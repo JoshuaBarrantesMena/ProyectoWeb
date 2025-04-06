@@ -10,6 +10,19 @@
 </head>
 <body>
     <header>
-        
+        <div class="header_content">
+            <div class="header_left">
+                <a href="#"><img src="view/img/MainLogo.png" alt="MainLogo"></a>
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Horarios</a></li>
+                    <li><a href="#">Historial</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li class="header_login"><a href="#">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     
