@@ -90,3 +90,115 @@ footer{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+
+#Inicio_columnas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Inicio{
+    background: url("../img/InicioBG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+}
+.Inicio_search_panel{
+    background-color: #D4D4D4;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 60px;
+}
+.Inicio_search_panel table{
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 15px;
+    padding-bottom: 20px;
+}
+.Inicio_search_panel a{
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #2D3960;
+    color: #D4D4D4;
+    padding: 6px;
+    border-radius: 12px;
+    padding-bottom: 8px;
+}
+.Inicio_search_panel a:hover{
+    background-color: #212a47;
+}
+.Inicio_search_panel_params{
+    background-color: #a7a6a6;
+    padding: 6px;
+    border-radius: 12px;
+    width: 200px;
+}
+.Inicio_search_panel_params h6{
+    font-size: 12px;
+}
+.Inicio_search_panel_params select{
+    background-color: #a7a6a6;
+    border: 0px;
+    font-size: 12px;
+}
+.Inicio_input_date{
+    background-color: #a7a6a6;
+    border: 0px;
+    font-size: 12px;
+    padding-left: 40px;
+}
+.Inicio_input_number{
+    background-color: #a7a6a6;
+    border: 0px;
+    font-size: 12px;
+}
+.Inicio_left_label{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 360px;
+    background-color: #2e3b63b4;
+    color: white;
+    font-size: 22px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.Inicio_left_label p{
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.25;
+}
+.Inicio_left{
+    width: 50%;
+    flex: 3;
+}
+.Inicio_left_content{
+    padding-top: 60px;
+}
+.Inicio_right{
+    width: 50%;
+    justify-content: center;
+    flex: 2;
+}
+.Inicio_right_label{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 360px;
+    text-align: center;
+    background-color: #2e3b63b4;
+    color: white;
+    font-size: 22px;
+}
+.Inicio_right h2{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.Inicio_right p{
+    padding-bottom: 40px;
+}
