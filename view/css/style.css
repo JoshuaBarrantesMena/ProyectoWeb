@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
+/*
+|------------------------------------------------header.php--------------------------------------------------|
+*/
 header{
     background-color: #D4D4D4;
     height: 120px;
@@ -53,6 +55,9 @@ header{
 
 
 
+/*
+|------------------------------------------------footer.php--------------------------------------------------|
+*/
 footer{
     background-color: #D4D4D4;
     height: 120px;
@@ -92,6 +97,10 @@ footer{
 }
 
 
+
+/*
+|------------------------------------------------index.php---------------------------------------------------|
+*/
 #Inicio_columnas{
     display: flex;
     justify-content: center;
@@ -153,6 +162,9 @@ footer{
     background-color: #a7a6a6;
     border: 0px;
     font-size: 12px;
+    height: 24px;
+    width: 80px;
+    padding-left: 30px;
 }
 .Inicio_left_label{
     padding-left: 10px;
@@ -201,4 +213,67 @@ footer{
 }
 .Inicio_right p{
     padding-bottom: 40px;
+}
+
+
+
+/*
+|------------------------------------------------login.php---------------------------------------------------|
+*/
+.Login{
+    background: url("../img/InicioBG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+}
+.Login_content{
+    background-color: #2d3960d1;
+    border-radius: 12px;
+    height: 440px;
+    width: 70%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.Login_columns{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#Login_input{
+    width: 400px;
+}
+.Login_left{
+
+}
+#Login_info{
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 30px;
+}
+#Login_info h5{
+    padding-right: 10px;
+}
+.Login_right{
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.Login_right a{
+    text-decoration: none;
+    color: #212a47;
+    font-size: 20px;
+    background-color: lime;
+    border-radius: 20px;
+    padding: 15px;
+}
+.Login_right a:hover{
+    color: white;
 }
