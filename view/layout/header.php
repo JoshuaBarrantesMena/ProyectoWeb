@@ -12,15 +12,15 @@
     <header>
         <div class="header_content">
             <div class="header_left">
-                <a href="index.php?i=index"><img src="view/img/MainLogo.png" alt="MainLogo"></a> <!-- Pagians dinamicas, cambiar a futuro -->
+                <a href="index.php?i=index"><img src="view/img/MainLogo.png" alt="MainLogo"></a>
             </div>
             <div class="header_right">
-                <ul> <!-- Paginas dinamicas, cambiar en el futuro -->
+                <ul>
                     <li><a href="index.php?i=index">Inicio</a></li>
-                    <li><a href="">Horarios</a></li>
-                    <li><a href="#">Historial</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li class="header_login"><a href="index.php?i=login">Iniciar Sesión</a></li>
+                    <li><a href="index.php?ho=horarios">Horarios</a></li>
+                    <li><a href="index.php?hi=historial">Historial</a></li>
+                    <li><a href="index.php?c=contacto">Contacto</a></li>
+                    <li class="header_login"><a href="index.php?l=login">Iniciar Sesión</a></li>
                 </ul>
             </div>
         </div>

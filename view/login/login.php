@@ -1,4 +1,4 @@
-<?php require('layout/header.php');?>
+<?php require('view/layout/header.php');?>
     <section class="Login">
         <div class="Login_content">
             <h1>Bienvenido del vuelta</h1>
@@ -26,4 +26,4 @@
             </div>
         </div>
     </section>
-<?php require('layout/footer.php');?>
+<?php require('view/layout/footer.php');?>

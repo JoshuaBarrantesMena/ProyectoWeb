@@ -52,7 +52,7 @@
         <div class="Inicio_right" id="Inicio_columnas">
             <div class="Inicio_right_label">
                 <h2>¡La mejor opcion para viajar por Chiapas!</h2>
-                <p>Todos las lineas y todos los viajes de la “Central Camionera de los Ancianos”</p>
+                <p>Todas las lineas y todos los viajes de la “Central Camionera de los Ancianos”</p>
                 <p>Busca tu viaje y reservalo a toda hora y desde donde estes.</p>
             </div>
         </div>
