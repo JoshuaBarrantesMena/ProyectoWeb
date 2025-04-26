@@ -221,7 +221,7 @@ footer{
 |------------------------------------------------login.php---------------------------------------------------|
 */
 .Login{
-    background: url("../img/InicioBG.png");
+    background: url("../img/LoginBG.png");
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 20px;
@@ -247,9 +247,6 @@ footer{
 }
 #Login_input{
     width: 400px;
-}
-.Login_left{
-
 }
 #Login_info{
     padding-right: 100px;
@@ -289,7 +286,96 @@ footer{
 /*
 |------------------------------------------------historial.php-----------------------------------------------|
 */
+.Historial{
+    background: url("../img/InicioBG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    justify-content: center;
+}
+.Historial_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Historial_left{
+    width: 50%;
+    flex: 2;
+    margin: 60px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.Historial_right{
+    width: 50%;
+    flex: 3;
+    margin: 60px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.Historial_user{
+    background-color: #D4D4D4;
+    text-align: center;
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 20px;
+    max-height: 520px;
+}
+.Historial_user H3{
+    padding-bottom: 20px;
+}
+.Historial_user h5{
+    padding-bottom: 20px;
+}
+.Historial_user img{
+    padding-bottom: 40px;
+}
+.Historial_user div{
+    padding-bottom: 20;
+}
+#Historial_user_text{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+#Historial_user_text h6{
+    padding-top: 2.5px;
+    padding-right: 5px;
+}
 
+.Historial_list{
+    background-color: #D4D4D4;
+    text-align: center;
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    height: 520px;
+    max-height: 520px;
+}
+.Historial_list h3{
+    padding-bottom: 20px;
+}
+.Historial_list table {
+    width: 100%;
+    border: none;
+}
+
+.Historial_list td {
+    background-color: #D4D4D4;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.Historial_list td:first-child {
+    border-left: none;
+}
+
+.Historial_list td:last-child {
+    border-right: none;
+}
 
 
 /*
