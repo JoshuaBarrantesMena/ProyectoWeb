@@ -5,6 +5,7 @@
     require_once("controller/horarioscontroller.php");
     require_once("controller/historialcontroller.php");
     require_once("controller/contactocontroller.php");
+    require_once("controller/registercontroller.php");
 
     if(isset($_GET['i'])):
         $metodo=$_GET['i'];
@@ -31,6 +32,11 @@
             $metodo=$_GET['c'];
             if(method_exists('contactocontroller', $metodo)){
                 contactocontroller::{$metodo}();
+            }
+        }else if(isset($_GET['r'])){
+            $metodo=$_GET['r'];
+            if(method_exists('registercontroller', $metodo)){
+                registercontroller::{$metodo}();
             }
         }else{
             indexcontroller::index();

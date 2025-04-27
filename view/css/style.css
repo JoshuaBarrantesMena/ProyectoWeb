@@ -232,7 +232,7 @@ footer{
     border-radius: 12px;
     height: 440px;
     width: 70%;
-    margin: 100px auto;
+    margin: 70px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,6 +274,12 @@ footer{
 .Login_right a:hover{
     color: white;
 }
+.Login_register{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 
 
 
@@ -381,3 +387,70 @@ footer{
 /*
 |------------------------------------------------contacto.php------------------------------------------------|
 */
+
+/*
+-------------------------------------------------register.php------------------------------------------------|
+*/
+.Register{
+    background: url("../img/LoginBG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+}
+.Register_content{
+    background-color: #2d3960d1;
+    border-radius: 12px;
+    height: 600px;
+    width: 70%;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.Register_columns{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Register_left{
+    padding-right: 40px;
+}
+.Register_right{
+    padding-left: 40px;
+}
+#Register_info{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#Register_input{
+    width: 300px;
+}
+#Register_info h5{
+    padding-right: 10px;
+    font-size: 18px;
+}
+.Register_confirm{
+    padding-top: 15px;
+}
+
+.Register_register{
+    padding-top: 40px;
+    text-align: center;
+}
+.Register_register a{
+    text-decoration: none;
+    color: #212a47;
+    font-size: 20px;
+    background-color: lime;
+    border-radius: 20px;
+    padding: 15px;
+}
+.Register_register a:hover{
+    color: white;
+}

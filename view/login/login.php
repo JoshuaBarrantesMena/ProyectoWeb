@@ -24,6 +24,10 @@
                     <a href="#">Confirmar</a>
                 </div>
             </div>
+            <div class="Login_register">
+                <h5>¿No tienes cuenta?</h5>
+                <a href="index.php?r=register">Registrate</a>
+            </div>
         </div>
     </section>
 <?php require('view/layout/footer.php');?>
