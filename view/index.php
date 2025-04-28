@@ -11,6 +11,15 @@
                                     <h6>Origen</h6>
                                     <select class="form-select" aria-label="Default select example"> <!-- Provicional -->
                                         <option selected>No seleccionado</option>
+                                        <?php
+                                        $pos = 1;
+                                            foreach($data1 as $key => $value){
+                                                $pos++;
+                                                foreach($value as $location){
+                                                    echo "<option value=".$pos.">".$location["Origen"]."</option>";
+                                                }
+                                            }
+                                        ?>
                                     </select>
                                 </div>
                             </td>
@@ -19,6 +28,15 @@
                                     <h6>Destino</h6>
                                     <select class="form-select" aria-label="Default select example"> <!-- Provicional -->
                                         <option selected>No seleccionado</option>
+                                        <?php
+                                        $pos = 1;
+                                            foreach($data2 as $key => $value){
+                                                $pos++;
+                                                foreach($value as $location){
+                                                    echo "<option value=".$pos.">".$location["Destino"]."</option>";
+                                                }
+                                            }
+                                        ?>
                                     </select>
                                 </div>
                             </td>
