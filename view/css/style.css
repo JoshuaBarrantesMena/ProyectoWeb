@@ -164,11 +164,21 @@ footer{
 .Inicio_input_number{
     background-color: #a7a6a6;
     border: 0px;
-    font-size: 12px;
+    font-size: 14px;
     height: 24px;
     width: 80px;
-    padding-left: 30px;
+    padding-right: 2px;
+    text-align: center;
 }
+.Inicio_input_number::-webkit-inner-spin-button,
+.numeric-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.Inicio_input_number:focus {
+    border-color: #555;
+    outline: none;
+  }
 .Inicio_left_label{
     padding-left: 10px;
     padding-right: 10px;

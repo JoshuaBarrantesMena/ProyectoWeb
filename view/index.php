@@ -51,7 +51,7 @@
                             <td>
                                 <div class="Inicio_search_panel_params">
                                     <h6>Pasajeros</h6>
-                                    <input type="number" class="Inicio_input_number">
+                                    <input type="number" value="1" min="0" class="Inicio_input_number">
                                 </div>
                             </td>
                         </tr>
