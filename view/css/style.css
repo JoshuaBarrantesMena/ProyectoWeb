@@ -152,6 +152,9 @@ footer{
     border: 0px;
     font-size: 12px;
 }
+.Inicio_search_panel_params select:hover{
+    background-color: #D4D4D4;
+}
 .Inicio_input_date{
     background-color: #a7a6a6;
     border: 0px;

@@ -8,8 +8,7 @@
         }
         public static function index(){
             $index = new Index();
-            $data1 = $index->getOrigenes();
-            $data2 = $index->getDestinos();
+            $data = $index->getUbicaciones();
             require_once("view/index.php");
         }
     }

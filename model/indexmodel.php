@@ -1,37 +1,22 @@
 <?php
     class Index{
-        private $listaOrigenes;
-        private $listaDestinos;
+        private $listaUbicaciones;
 
         public function __construct(){
-            $this->listaOrigenes = array();
-            $this->listaDestinos = array();
+            $this->listaUbicaciones = array();
         }
 
-        public function getOrigenes(){ //Cambiar desde base de datos (catalogo)
+        public function getUbicaciones(){
             include_once("conexion.php");
             $cnn = new Conexion();
-            $consulta = "SELECT DISTINCT Origen FROM rutas ORDER BY Origen ASC";
+            $consulta = "SELECT Nombre FROM Ciudades ORDER BY Nombre ASC";
             $resultado = $cnn->prepare($consulta);
             $resultado->execute();
 
             while($row = $resultado->fetchAll(PDO::FETCH_ASSOC)){
-                $this->listaOrigenes[] = $row;
+                $this->listaUbicaciones[] = $row;
             }
-            return $this->listaOrigenes;
-        }
-
-        public function getDestinos(){ //Cambiar desde base de datos (catalogo)
-            include_once("conexion.php");
-            $cnn = new Conexion();
-            $consulta = "SELECT DISTINCT Destino FROM rutas ORDER BY Destino ASC";
-            $resultado = $cnn->prepare($consulta);
-            $resultado->execute();
-
-            while($row = $resultado->fetchAll(PDO::FETCH_ASSOC)){
-                $this->listaDestinos[] = $row;
-            }
-            return $this->listaDestinos;
+            return $this->listaUbicaciones;
         }
     }
 ?>

@@ -9,14 +9,14 @@
                             <td>
                                 <div class="Inicio_search_panel_params">
                                     <h6>Origen</h6>
-                                    <select class="form-select" aria-label="Default select example"> <!-- Provicional -->
+                                    <select class="form-select" aria-label="Default select example">
                                         <option selected>No seleccionado</option>
                                         <?php
                                         $pos = 1;
-                                            foreach($data1 as $key => $value){
+                                            foreach($data as $key => $value){
                                                 $pos++;
                                                 foreach($value as $location){
-                                                    echo "<option value=".$pos.">".$location["Origen"]."</option>";
+                                                    echo "<option value=".$pos.">".$location["Nombre"]."</option>";
                                                 }
                                             }
                                         ?>
@@ -26,14 +26,14 @@
                             <td>
                                 <div class="Inicio_search_panel_params">
                                     <h6>Destino</h6>
-                                    <select class="form-select" aria-label="Default select example"> <!-- Provicional -->
+                                    <select class="form-select" aria-label="Default select example">
                                         <option selected>No seleccionado</option>
                                         <?php
                                         $pos = 1;
-                                            foreach($data2 as $key => $value){
+                                            foreach($data as $key => $value){
                                                 $pos++;
                                                 foreach($value as $location){
-                                                    echo "<option value=".$pos.">".$location["Destino"]."</option>";
+                                                    echo "<option value=".$pos.">".$location["Nombre"]."</option>";
                                                 }
                                             }
                                         ?>
