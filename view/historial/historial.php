@@ -5,8 +5,8 @@
                 <div class="Historial_user">
                     <h3>Usuario</h3>
                     <img src="view/img/DefaultUser.png">
-                    <h5>Nombre de usuario</h5>
-                    <div id="Historial_user_text">
+                    <?php echo '<h5>'.$_SESSION["nombreUsuario"]." ".$_SESSION["apellidoUsuario"].'</h5>';?>
+                    <div id="Historial_user_text">work
                         <h6>Destino preferido: </h6>
                         <p>destino</p>
                     </div>

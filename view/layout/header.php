@@ -20,7 +20,24 @@
                     <li><a href="index.php?ho=horarios">Horarios</a></li>
                     <li><a href="index.php?hi=historial">Historial</a></li>
                     <li><a href="index.php?c=contacto">Contacto</a></li>
-                    <li class="header_login"><a href="index.php?l=login">Iniciar Sesión</a></li>
+                    <?php
+                    session_start();
+                    if(isset($_SESSION["idUsuario"])){
+                        if($_SESSION["idUsuario"] == 0){
+                            echo '<li class="header_login">';
+                            echo '<a href="index.php?l=login">Iniciar Sesión</a>';
+                            echo '</li>';
+                        }else{
+                            echo '<li class="header_loged">';
+                            echo '<a href="index.php?l=profile"><img src="view/img/DefaultUser.png">'.$_SESSION['nombreUsuario'].'</a>';
+                            echo '</li>';
+                        }
+                    }else{
+                        echo '<li class="header_login">';
+                        echo '<a href="index.php?l=login">Iniciar Sesión</a>';
+                        echo '</li>';
+                    }    
+                    ?>
                 </ul>
             </div>
         </div>

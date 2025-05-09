@@ -52,6 +52,21 @@ header{
 .header_login a:hover{
     box-shadow: 4px 4px 12px #212a47;
 }
+.header_loged img{
+    height: 40px;
+}
+.header_loged a{
+    padding: 15px;
+    border: 3px solid #2D3960;
+    background-color: #D4D4D4;
+    border-radius: 16px;
+    color: #2D3960;
+}
+.header_loged a:hover{
+    box-shadow: 4px 4px 12px #212a47;
+    background-color: #2D3960;
+    color: #D4D4D4;
+}
 
 
 
@@ -233,7 +248,8 @@ footer{
 /*
 |------------------------------------------------login.php---------------------------------------------------|
 */
-.Login{
+.Login form{
+    size: auto;
     background: url("../img/LoginBG.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -276,7 +292,7 @@ footer{
     display: flex;
     flex-direction: column-reverse;
 }
-.Login_right a{
+.Login_right input{
     text-decoration: none;
     color: #212a47;
     font-size: 20px;
@@ -293,6 +309,91 @@ footer{
     text-align: center;
 }
 
+
+
+/*
+|------------------------------------------------profile.php-------------------------------------------------|
+*/
+.Profile form{
+    background: url("../img/LoginBG.png");
+    background-size: 115%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+}
+.Profile_content{
+    background-color: #d4d4d4ee;
+    border-radius: 12px;
+    height: auto;
+    padding: 20px;
+    width: 70%;
+    margin: 70px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2D3960;
+}
+.Profile_data1{
+    text-align: center;
+}
+.Profile_columns{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 140px;
+}
+.Profile_left{
+    margin-right: 0px;
+}
+.Profile_right{
+    margin-left: 0px;
+}
+#Profile_info{
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: right;
+}
+#Profile_input{
+    width: 300px;
+}
+#Profile_info h5{
+    padding-right: 10px;
+    font-size: 18px;
+}
+.Profile_data2{
+    padding-top: 15px;
+    text-align: left;
+}
+.Profile_buttons{
+    padding-top: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.Profile_buttons button{
+    text-decoration: none;
+    color: #212a47;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.Profile_buttons button:hover{
+    border: 2px solid #212a47
+}
+.Profile_save button{
+    background-color: rgb(128, 255, 128);
+}
+.Profile_save button:hover{
+    color: white
+}
+.Profile_unlogin button{
+    background-color: rgb(255, 128, 128);
+}
+.Profile_unlogin button:hover{
+    color: white
+}
 
 
 
@@ -400,6 +501,65 @@ footer{
 /*
 |------------------------------------------------contacto.php------------------------------------------------|
 */
+.Contacto{
+    background-color: #edf2ff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.Contacto_content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Contacto_main img{
+    padding-top: 20px;
+    height: 100px;
+}
+.Contacto_main{
+    background-color: #D4D4D4;
+    border-radius: 16px;
+    padding: 20px;
+    color: #2D3960;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.Contacto_text{
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+    gap: 80px;
+}
+.Contacto_colaboradores{
+    width: 85vw;
+    margin: 60px auto;
+    margin-top: 60px;
+    background-color: #D4D4D4;
+    border-radius: 16px;
+    padding: 20px;
+    color: #2D3960;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.Contacto_colaboradores_list{
+    width: 80vw;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#Contacto_cards{
+    align-items: center;
+    min-width: 200px;
+}
+
+
 
 /*
 -------------------------------------------------register.php------------------------------------------------|

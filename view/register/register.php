@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div id="Register_info">
-                        <h5>Telefono</h5>
+                        <h5>Teléfono</h5>
                         <div class="form-floating mb-3" id="Register_input">
                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">Phone number</label>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="Register_right">
                     <div id="Register_info">
-                        <h5>Correo</h5>
+                        <h5>Correo electrónico</h5>
                         <div class="form-floating mb-3" id="Register_input">
                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">Email address</label>

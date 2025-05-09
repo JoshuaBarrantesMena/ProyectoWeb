@@ -4,7 +4,7 @@
             <a href="index.php?i=index"><img src="view/img/Logo.png" alt="Logo"></a>
         </div>
         <div class="footer_center">
-            <p>&copy; Viajeros del Sul y Empresas Coordinadas, S.A. de C.V. México, 2025. Todos los derechos reservados.</p>
+            <p>&copy; Viajeros del Sur y Empresas Coordinadas, S.A. de C.V. México, 2025. Todos los derechos reservados.</p>
         </div>
         <div class="footer_right">
             <ul class="footer_icons">
