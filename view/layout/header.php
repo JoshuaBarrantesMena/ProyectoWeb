@@ -17,7 +17,6 @@
             <div class="header_right">
                 <ul>
                     <li><a href="index.php?i=index">Inicio</a></li>
-                    <li><a href="index.php?ho=horarios">Horarios</a></li>
                     <li><a href="index.php?hi=historial">Historial</a></li>
                     <li><a href="index.php?c=contacto">Contacto</a></li>
                     <?php

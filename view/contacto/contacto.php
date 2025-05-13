@@ -12,6 +12,7 @@
                 <h3>Contactos de nuestros colaboradores</h3>
                 <div class="Contacto_colaboradores_list">
                 <?php
+                if(is_array($empresas)){
                     foreach($empresas as $key => $value){
                         foreach($value as $empresa){
                             echo '<div class="card" id="Contacto_cards" style="width: 18rem;">';
@@ -23,6 +24,9 @@
                             echo '</div>';
                         }
                     }
+                }else{
+                    echo '<h5>No hay colaboradores registrados</h5>';
+                }
                 ?>
                 </div>
             </div>

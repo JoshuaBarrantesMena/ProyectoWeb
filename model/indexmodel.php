@@ -6,10 +6,12 @@
             $this->listaUbicaciones = array();
         }
 
+        
+
         public function getUbicaciones(){
             include_once("conexion.php");
             $cnn = new Conexion();
-            $consulta = "SELECT Nombre FROM Ciudades ORDER BY Nombre ASC";
+            $consulta = "SELECT Nombre FROM ciudades ORDER BY Nombre ASC";
             $resultado = $cnn->prepare($consulta);
             $resultado->execute();
 

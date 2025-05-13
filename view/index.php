@@ -3,20 +3,19 @@
         <div class="Inicio_left" id="Inicio_columnas">
             <div class="Inicio_left_content">
                 <div class="Inicio_search_panel">
+                <form action="index.php?b=busqueda" method="POST">
                     <h2>Buscar tu viaje</h2>
                     <table>
                         <tr>
                             <td>
                                 <div class="Inicio_search_panel_params">
                                     <h6>Origen</h6>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>No seleccionado</option>
+                                    <select class="form-select" aria-label="Default select example" name="origen">
+                                        <option selected value="No seleccionado">No seleccionado</option>
                                         <?php
-                                        $pos = 1;
                                             foreach($data as $key => $value){
-                                                $pos++;
                                                 foreach($value as $location){
-                                                    echo "<option value=".$pos.">".$location["Nombre"]."</option>";
+                                                    echo '<option value="' . htmlspecialchars($location["Nombre"]) . '">' . htmlspecialchars($location["Nombre"]) . '</option>';
                                                 }
                                             }
                                         ?>
@@ -26,14 +25,12 @@
                             <td>
                                 <div class="Inicio_search_panel_params">
                                     <h6>Destino</h6>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>No seleccionado</option>
+                                    <select class="form-select" aria-label="Default select example" name="destino">
+                                        <option selected value="No seleccionado">No seleccionado</option>
                                         <?php
-                                        $pos = 1;
                                             foreach($data as $key => $value){
-                                                $pos++;
                                                 foreach($value as $location){
-                                                    echo "<option value=".$pos.">".$location["Nombre"]."</option>";
+                                                    echo '<option value="' . htmlspecialchars($location["Nombre"]) . '">' . htmlspecialchars($location["Nombre"]) . '</option>';
                                                 }
                                             }
                                         ?>
@@ -45,18 +42,21 @@
                             <td>
                                 <div class="Inicio_search_panel_params">
                                     <h6>Fecha</h6>
-                                    <input type="date" class="Inicio_input_date">
+                                    <input type="date" class="Inicio_input_date" name="fecha">
                                 </div>
                             </td>
                             <td>
                                 <div class="Inicio_search_panel_params">
                                     <h6>Pasajeros</h6>
-                                    <input type="number" value="1" min="0" class="Inicio_input_number">
+                                    <input type="number" value="1" min="0" class="Inicio_input_number" name="pasajeros">
                                 </div>
                             </td>
                         </tr>
                     </table>
-                    <a href="#">Buscar</a>
+                    <div class="Inicio_search_panel_buttons">
+                        <input type="submit" value="buscar">
+                    </div>
+                </form>
                 </div>
                 <div class="Inicio_left_label">
                     <p>Somos la mejor opción en venta de boletos de autobús por Internet.

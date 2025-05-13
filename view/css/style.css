@@ -141,7 +141,7 @@ footer{
     border-spacing: 15px;
     padding-bottom: 20px;
 }
-.Inicio_search_panel a{
+.Inicio_search_panel_buttons input{
     font-size: 15px;
     text-decoration: none;
     background-color: #2D3960;
@@ -150,7 +150,7 @@ footer{
     border-radius: 12px;
     padding-bottom: 8px;
 }
-.Inicio_search_panel a:hover{
+.Inicio_search_panel_buttons input:hover{
     background-color: #212a47;
 }
 .Inicio_search_panel_params{
@@ -241,6 +241,205 @@ footer{
 }
 .Inicio_right p{
     padding-bottom: 40px;
+}
+
+
+
+/*
+|------------------------------------------------busqueda.php------------------------------------------------|
+*/
+.Busqueda{
+    background-color: aliceblue;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Busqueda_params{
+    background-color: #a7a6a6;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    margin: 70px auto;
+    gap: 100px;
+    flex-direction: row;
+    padding: 25px;
+    margin-top: 0px;
+}
+.Busqueda_params_origen select{
+    background-color: #D4D4D4;
+    border: 0px;
+    font-size: 16px;
+}
+.Busqueda_params_origen select:hover{
+    background-color: white;
+}
+.Busqueda_params_destino select{
+    background-color: #D4D4D4;
+    border: 0px;
+    font-size: 16px;
+}
+.Busqueda_params_destino select:hover{
+    background-color: white;
+}
+.Busqueda_input_date{
+    background-color: #D4D4D4;
+    border: 0px;
+    border-radius: 6px;
+    font-size: 16px;
+    padding-left: 40px;
+    height: 36px;
+}
+.Busqueda_input_number{
+    background-color: #D4D4D4;
+    border: 0px;
+    border-radius: 6px;
+    font-size: 16px;
+    height: 36px;
+    width: 80px;
+    padding-right: 2px;
+    text-align: center;
+}
+.Busqueda_input_number::-webkit-inner-spin-button,
+.numeric-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.Busqueda_params_button{
+    background-color: #D4D4D4;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Busqueda_params_button input{
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #2D3960;
+    color: #D4D4D4;
+    padding: 6px;
+    border-radius: 12px;
+    padding-bottom: 8px;
+}
+.Busqueda_params_button input:hover{
+    background-color: #212a47;
+}
+.Busqueda_results{
+    background-color: #D4D4D4;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+}
+.Busqueda_results h2{
+    padding: 20px;
+}
+.Busqueda_results table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #D4D4D4;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.Busqueda_results td {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #D4D4D4;
+    border-right: 1px solid #D4D4D4;
+}
+.Busqueda_results td:first-child {
+    border-left: none;
+}
+.Busqueda_results td:last-child {
+    border-right: none;
+}
+.Busqueda_results thread tr{
+    padding: 20px;
+    border-top: none;
+    border-bottom: none;
+}
+.Busqueda_results tbody{
+    text-align: center;
+}
+.Busqueda_results input{
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #2D3960;
+    color: #D4D4D4;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+
+
+/*
+|------------------------------------------------reserva.php-------------------------------------------------|
+*/
+.Reserva{
+    background: url("../img/LoginBG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.Reserva_content{
+    background-color: #d4d4d4ee;
+    border-radius: 12px;
+    height: auto;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #2D3960;
+}
+.Reserva_content h2{
+    padding-bottom: 40px;
+}
+.Reserva_content_left,
+.Reserva_content_center,
+.Reserva_content_right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+.Reserva_text {
+    min-width: 150px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.Reserva_confirm{
+    background-color: #d4d4d4ee;
+    border-radius: 12px;
+    height: auto;
+    padding: 20px;
+    width: 50%;
+    margin: 10px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #2D3960;
+}
+.Reserva_confirm input{
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #2D3960;
+    color: #D4D4D4;
+    padding: 4px;
+    border-radius: 12px;
 }
 
 
@@ -553,6 +752,9 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+.Contacto_colaboradores_list h5{
+    padding-left: 25px;
 }
 #Contacto_cards{
     align-items: center;

@@ -1,17 +1,21 @@
 <?php
     require_once("config.php");
     require_once("controller/indexcontroller.php");
+    require_once("controller/busquedacontroller.php");
     require_once("controller/logincontroller.php");
     require_once("controller/horarioscontroller.php");
     require_once("controller/historialcontroller.php");
     require_once("controller/contactocontroller.php");
     require_once("controller/registercontroller.php");
+    require_once("controller/reservacontroller.php");
 
     if(isset($_GET['i'])):
         $metodo=$_GET['i'];
-        if(method_exists('indexcontroller', $metodo)):
+        if(method_exists('indexcontroller', $metodo)){
             indexcontroller::{$metodo}();
-        endif;
+        }else{
+            indexcontroller::index();
+        }
     else:
         if(isset($_GET['l'])){
             $metodo=$_GET['l'];
@@ -37,6 +41,16 @@
             $metodo=$_GET['r'];
             if(method_exists('registercontroller', $metodo)){
                 registercontroller::{$metodo}();
+            }
+        }else if(isset($_GET['res'])){
+            $metodo=$_GET['res'];
+            if(method_exists('reservacontroller', $metodo)){
+                reservacontroller::{$metodo}();
+            }
+        }else if(isset($_GET['b'])){
+            $metodo=$_GET['b'];
+            if(method_exists('busquedacontroller', $metodo)){
+                busquedacontroller::{$metodo}();
             }
         }else{
             indexcontroller::index();

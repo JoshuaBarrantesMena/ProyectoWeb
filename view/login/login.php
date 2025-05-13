@@ -1,8 +1,8 @@
 <?php require('view/layout/header.php');?>
     <section class="Login">
-        <form action="">
+        <form action="index.php" method="GET">
         <div class="Login_content">
-            <h1>Bienvenido del vuelta</h1>
+            <h1>Bienvenido de vuelta</h1>
             <h4>Inicia Sesión</h4>
             <div class="Login_columns">
                 <div class="Login_left">

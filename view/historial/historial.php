@@ -6,7 +6,7 @@
                     <h3>Usuario</h3>
                     <img src="view/img/DefaultUser.png">
                     <?php echo '<h5>'.$_SESSION["nombreUsuario"]." ".$_SESSION["apellidoUsuario"].'</h5>';?>
-                    <div id="Historial_user_text">work
+                    <div id="Historial_user_text">
                         <h6>Destino preferido: </h6>
                         <p>destino</p>
                     </div>
